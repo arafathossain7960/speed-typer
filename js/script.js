@@ -142,3 +142,5 @@ setInterval(() => {
 
   document.getElementById("show-time").innerHTML = `${startTime ? timeSpentRounded : 0} seconds`;
 }, 1000);
+
+

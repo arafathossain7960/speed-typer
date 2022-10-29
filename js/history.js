@@ -38,3 +38,5 @@ function displayHistory() {
     histories.appendChild(newRow);
   });
 }
+
+displayHistory();
