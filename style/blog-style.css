@@ -1,0 +1,54 @@
+/* universal style  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0 250px;
+  
+}
+.container{
+    background-color: #f0eaea;
+    box-shadow: 10px 10px 10px #f0eaea;
+    padding: 0 50px;
+}
+header{
+   text-align: center;
+   padding: 50px;
+   
+}
+header h1{
+    font-size: 2.5rem;
+    padding-bottom: 10px;
+}
+header p{
+    font-size: 22px;
+}
+/* article style  */
+
+article{
+    padding: 30px 0px;
+}
+article h3{
+    font-size: 1.8rem;
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+article span{
+    color: #779e77;
+    font-size: 22px;
+}
+article p, ul>li{
+    font-size: 25px;
+    font-weight: 400;
+}
+article b{
+    padding-bottom:7px ;
+}
+footer{
+    
+    text-align: center;
+    padding: 50px;
+    font-size: 22px;
+}

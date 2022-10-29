@@ -4,9 +4,94 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/blog-style.css">
     <title>Blogs</title>
 </head>
 <body>
-    <h1>We will add Blog here</h1>
+    <div class="container">
+
+
+    <header>
+        <h1>Welcome to JavaScript blog</h1>
+        <p>We are trying to little explain about JavaScript</p>
+    </header>
+    <main>
+        <article>
+            <div class="blog-1">
+                <h3>
+                    <span>1. </span>
+                    LocalStorage vs SessionStorage 
+                </h3>
+                <p>
+                    <span>Ans: </span>
+                    SessionStorage and LocalStorage those are browser's storage, Those are contain data.
+                    <br>
+                    The difference between SessionStorage and LocalStorage is that sessionStorage removes data when the browser page's session end or the particular tab will close, on the other hand, the LocalStorage won't remove data, even if the browser will close.
+
+                </p>
+            </div>
+            <div class="blog-2">
+                <h3>
+                    <span>2. </span>
+                Global scope vs Block scope
+                </h3>
+
+                <p>
+                    <span>Ans: </span>
+                    Es6 refer 2 type of scope <b>Global scope</b> and <b> Block scope</b> <br>
+                    Global scope means it's acceseble globally, for example, declare a variable named <b>var xName = 'react'</b> top of the page, you can access xName variable anywhere in code. 
+                    <br>
+                    Besides, Block scope limited in block or curly bracket '{}', for example, declare a variable named { let yName = 'view';} in the curly bracket, you can't access outside the block.
+                    <br>
+                    In JavaScript <b>var</b> used as global scope,
+                    <b>let</b> and <b>const</b> used as a block cope variable.
+ 
+                </p>
+            </div>
+            <div class="blog-3">
+                <h3>
+                    <span>3. </span>
+                    What is event loop in JavaScript ?
+                </h3>
+                <p>
+                    <span>Ans: </span>
+                    Event loop is a programming construct, that's allow a program to handle multiple event or task at the same time.
+                    <br>
+                    
+                    Basically Event loop has one simple job, which is monitor the call stake and callback Queue.
+                    <br>
+                    If the Call Stack is empty, the Event Loop will take the first event from the queue and will push it to the Call Stack, which effectively runs it. Such an iteration is called a tick in the Event Loop.
+                    <br>
+                    That whole things also called <b>asynchronous behavior.</b>
+
+                </p>
+            </div>
+            <div class="blog-4">
+                <h3>
+                    <span>4. </span>
+                    How many to get undefined in JavaScript ?
+                </h3>
+                <p>
+                    <span>Ans: </span>
+                   The <b>undefined</b> indicate that the value has not been assigned or not declare the variable or not exist the function.
+                   <br>
+                   There are so many ways to get undefined, we explain few conditions.
+                   <ul>
+                    <li>variable not declare</li>
+                    <li>variable declared but value not assigned</li>
+                    <li>function's parameter not taken</li>
+                    <li>function doesn't return but you expect something</li>
+                    <li>You want to get element from the array by index but index doesn't exist in the array.</li>
+                   </ul> 
+
+                </p>
+            </div>
+        </article>
+    </main>
+    <hr>
+   <footer>
+    <p>All copy <span>&#169;</span> right 2022 by <b>programming-hero</b> </p>
+   </footer>
+</div>
 </body>
 </html>
