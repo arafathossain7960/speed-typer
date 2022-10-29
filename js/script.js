@@ -68,7 +68,8 @@ const gameOver = () => {
   // the current time is the finish time
   // so total time taken is current time - start time
   const finishTime = new Date().getTime();
-  const timeTaken = (finishTime - startTime) / 1000;
+  const timeTakenRounded = (finishTime - startTime) / 1000;
+  const timeTaken = Math.round(timeTakenRounded)
 
   // show result modal
   resultModal.innerHTML = "";
@@ -101,7 +102,7 @@ const closeModal = () => {
 };
 
 const start = () => {
-  console.log('my console')
+ 
   // If already started, do not start again
   if (startTime) return;
 
@@ -132,10 +133,11 @@ startBtn.addEventListener("click", start);
 // displayHistory();
 
 // Show typing time spent
-// setInterval(() => {
-//   const currentTime = new Date().getTime();
-//   const timeSpent = (currentTime - startTime) / 1000;
+setInterval(() => {
+  const currentTime = new Date().getTime();
+  const timeSpent = (currentTime - startTime) / 1000;
+  const timeSpentRounded = Math.round(timeSpent);
 
 
-//   document.getElementById("show-time").innerHTML = `${startTime ? timeSpent : 0} seconds`;
-// }, 1000);
+  document.getElementById("show-time").innerHTML = `${startTime ? timeSpentRounded : 0} seconds`;
+}, 1000);
